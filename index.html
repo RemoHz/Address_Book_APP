@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html data-ng-app = "addressBookApp">
+
+    <head>
+        <title>Address Book APP</title>
+        <link href = "css/bootstrap.min.css" rel="stylesheet" />
+        <link href = "css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="navbar navbar-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <h1>Address Book APP</h1>
+                </div>
+            </div>
+        </div>
+
+        <div ng-view class="example-animate-container" ng-animate="{enter: 'example-enter', leave: 'example-leave'}"></div>
+
+        <script src="js/angular.js"></script>
+        <script src="application/application.js"></script>
+        <script src="application/controllers/controllers.js"></script>
+        <script src="application/services/contactsService.js"></script>
+    </body>
+
+</html>
